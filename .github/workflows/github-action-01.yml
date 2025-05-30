@@ -1,0 +1,15 @@
+### github-action-01.yml
+
+name: Test Github Actions-01
+run-name: Run Github Actions-01
+on:
+  push
+
+jobs:
+  Test-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step-01
+        run: |
+          echo "Test Github Actions echo-01"
+    
