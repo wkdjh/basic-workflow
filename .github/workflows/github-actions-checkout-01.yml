@@ -11,9 +11,16 @@ jobs:
     steps:
       - name: Print ls
         run: ls -al
-
+        
       - name: Github Actions Checkout
         uses: actions/checkout@v4
         with:
           path: checkout-dir
+
+      - name: Github Actions Checkout(others repository)
+        uses: actions/checkout@v4
+        with:
+          repository: actions/checkout
+          path: other-repo
+          
       - run: ls -al
